@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8FB79AED1F28FD380022AB5C /* PostEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB79AEC1F28FD380022AB5C /* PostEventViewController.swift */; };
+		8FB79AF01F2908060022AB5C /* UpdateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB79AEF1F2908060022AB5C /* UpdateEventViewController.swift */; };
+		8FB79AF21F2A13430022AB5C /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB79AF11F2A13430022AB5C /* Event.swift */; };
+		8FE5E4DD1F279B34005765C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5E4DC1F279B34005765C9 /* AppDelegate.swift */; };
+		8FE5E4DF1F279B34005765C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5E4DE1F279B34005765C9 /* ViewController.swift */; };
+		8FE5E4E21F279B34005765C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FE5E4E01F279B34005765C9 /* Main.storyboard */; };
+		8FE5E4E41F279B34005765C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FE5E4E31F279B34005765C9 /* Assets.xcassets */; };
+		8FE5E4E71F279B34005765C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FE5E4E51F279B34005765C9 /* LaunchScreen.storyboard */; };
+		8FE5E4F21F279B34005765C9 /* InstantgoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5E4F11F279B34005765C9 /* InstantgoTests.swift */; };
+		8FE5E4FD1F279B34005765C9 /* InstantgoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5E4FC1F279B34005765C9 /* InstantgoUITests.swift */; };
+		8FE5E50B1F279B76005765C9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FE5E50A1F279B76005765C9 /* GoogleService-Info.plist */; };
+		8FE5E5101F27A77C005765C9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5E50F1F27A77C005765C9 /* SignUpViewController.swift */; };
+		8FE5E5121F27AE29005765C9 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5E5111F27AE29005765C9 /* CalendarViewController.swift */; };
+		C0AA5E74E52466EDE7C2E6C5 /* Pods_Instantgo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDA7FCCC2FC2D6A56250BD38 /* Pods_Instantgo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8FE5E4EE1F279B34005765C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FE5E4D11F279B32005765C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FE5E4D81F279B33005765C9;
+			remoteInfo = Instantgo;
+		};
+		8FE5E4F91F279B34005765C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FE5E4D11F279B32005765C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FE5E4D81F279B33005765C9;
+			remoteInfo = Instantgo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8FB79AEC1F28FD380022AB5C /* PostEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostEventViewController.swift; sourceTree = "<group>"; };
+		8FB79AEF1F2908060022AB5C /* UpdateEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateEventViewController.swift; sourceTree = "<group>"; };
+		8FB79AF11F2A13430022AB5C /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		8FE5E4D91F279B34005765C9 /* Instantgo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instantgo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FE5E4DC1F279B34005765C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8FE5E4DE1F279B34005765C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8FE5E4E11F279B34005765C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8FE5E4E31F279B34005765C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8FE5E4E61F279B34005765C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8FE5E4E81F279B34005765C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FE5E4ED1F279B34005765C9 /* InstantgoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstantgoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FE5E4F11F279B34005765C9 /* InstantgoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantgoTests.swift; sourceTree = "<group>"; };
+		8FE5E4F31F279B34005765C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FE5E4F81F279B34005765C9 /* InstantgoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstantgoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FE5E4FC1F279B34005765C9 /* InstantgoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantgoUITests.swift; sourceTree = "<group>"; };
+		8FE5E4FE1F279B34005765C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FE5E50A1F279B76005765C9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8FE5E50F1F27A77C005765C9 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		8FE5E5111F27AE29005765C9 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		E308A5CE91D3CC43EB49ECB9 /* Pods-Instantgo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instantgo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Instantgo/Pods-Instantgo.debug.xcconfig"; sourceTree = "<group>"; };
+		E6EB63A929BA9AE1797DA658 /* Pods-Instantgo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instantgo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Instantgo/Pods-Instantgo.release.xcconfig"; sourceTree = "<group>"; };
+		EDA7FCCC2FC2D6A56250BD38 /* Pods_Instantgo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instantgo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8FE5E4D61F279B33005765C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0AA5E74E52466EDE7C2E6C5 /* Pods_Instantgo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FE5E4EA1F279B34005765C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FE5E4F51F279B34005765C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		76B5EF92FCC3AA547FFDE7C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDA7FCCC2FC2D6A56250BD38 /* Pods_Instantgo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8FE5E4D01F279B32005765C9 = {
+			isa = PBXGroup;
+			children = (
+				8FE5E4DB1F279B34005765C9 /* Instantgo */,
+				8FE5E4F01F279B34005765C9 /* InstantgoTests */,
+				8FE5E4FB1F279B34005765C9 /* InstantgoUITests */,
+				8FE5E4DA1F279B34005765C9 /* Products */,
+				DC324CA121C04518A4D317EC /* Pods */,
+				76B5EF92FCC3AA547FFDE7C9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8FE5E4DA1F279B34005765C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FE5E4D91F279B34005765C9 /* Instantgo.app */,
+				8FE5E4ED1F279B34005765C9 /* InstantgoTests.xctest */,
+				8FE5E4F81F279B34005765C9 /* InstantgoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FE5E4DB1F279B34005765C9 /* Instantgo */ = {
+			isa = PBXGroup;
+			children = (
+				8FE5E50E1F27A59A005765C9 /* Model */,
+				8FE5E50C1F27A57B005765C9 /* Controller */,
+				8FE5E50D1F27A58C005765C9 /* View */,
+				8FE5E4E31F279B34005765C9 /* Assets.xcassets */,
+				8FE5E50A1F279B76005765C9 /* GoogleService-Info.plist */,
+				8FE5E4E81F279B34005765C9 /* Info.plist */,
+			);
+			path = Instantgo;
+			sourceTree = "<group>";
+		};
+		8FE5E4F01F279B34005765C9 /* InstantgoTests */ = {
+			isa = PBXGroup;
+			children = (
+				8FE5E4F11F279B34005765C9 /* InstantgoTests.swift */,
+				8FE5E4F31F279B34005765C9 /* Info.plist */,
+			);
+			path = InstantgoTests;
+			sourceTree = "<group>";
+		};
+		8FE5E4FB1F279B34005765C9 /* InstantgoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8FE5E4FC1F279B34005765C9 /* InstantgoUITests.swift */,
+				8FE5E4FE1F279B34005765C9 /* Info.plist */,
+			);
+			path = InstantgoUITests;
+			sourceTree = "<group>";
+		};
+		8FE5E50C1F27A57B005765C9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8FE5E4DC1F279B34005765C9 /* AppDelegate.swift */,
+				8FE5E4DE1F279B34005765C9 /* ViewController.swift */,
+				8FE5E50F1F27A77C005765C9 /* SignUpViewController.swift */,
+				8FB79AEF1F2908060022AB5C /* UpdateEventViewController.swift */,
+				8FB79AEC1F28FD380022AB5C /* PostEventViewController.swift */,
+				8FE5E5111F27AE29005765C9 /* CalendarViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		8FE5E50D1F27A58C005765C9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8FE5E4E51F279B34005765C9 /* LaunchScreen.storyboard */,
+				8FE5E4E01F279B34005765C9 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8FE5E50E1F27A59A005765C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8FB79AF11F2A13430022AB5C /* Event.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DC324CA121C04518A4D317EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E308A5CE91D3CC43EB49ECB9 /* Pods-Instantgo.debug.xcconfig */,
+				E6EB63A929BA9AE1797DA658 /* Pods-Instantgo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8FE5E4D81F279B33005765C9 /* Instantgo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FE5E5011F279B34005765C9 /* Build configuration list for PBXNativeTarget "Instantgo" */;
+			buildPhases = (
+				D49D482EFA4BA2B4D6533E76 /* [CP] Check Pods Manifest.lock */,
+				8FE5E4D51F279B33005765C9 /* Sources */,
+				8FE5E4D61F279B33005765C9 /* Frameworks */,
+				8FE5E4D71F279B33005765C9 /* Resources */,
+				2A9A7837B8386B2773263AC7 /* [CP] Embed Pods Frameworks */,
+				2E7E9D669BE6FFBA2C77D6EB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Instantgo;
+			productName = Instantgo;
+			productReference = 8FE5E4D91F279B34005765C9 /* Instantgo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8FE5E4EC1F279B34005765C9 /* InstantgoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FE5E5041F279B34005765C9 /* Build configuration list for PBXNativeTarget "InstantgoTests" */;
+			buildPhases = (
+				8FE5E4E91F279B34005765C9 /* Sources */,
+				8FE5E4EA1F279B34005765C9 /* Frameworks */,
+				8FE5E4EB1F279B34005765C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FE5E4EF1F279B34005765C9 /* PBXTargetDependency */,
+			);
+			name = InstantgoTests;
+			productName = InstantgoTests;
+			productReference = 8FE5E4ED1F279B34005765C9 /* InstantgoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8FE5E4F71F279B34005765C9 /* InstantgoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FE5E5071F279B34005765C9 /* Build configuration list for PBXNativeTarget "InstantgoUITests" */;
+			buildPhases = (
+				8FE5E4F41F279B34005765C9 /* Sources */,
+				8FE5E4F51F279B34005765C9 /* Frameworks */,
+				8FE5E4F61F279B34005765C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FE5E4FA1F279B34005765C9 /* PBXTargetDependency */,
+			);
+			name = InstantgoUITests;
+			productName = InstantgoUITests;
+			productReference = 8FE5E4F81F279B34005765C9 /* InstantgoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8FE5E4D11F279B32005765C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Borja Rodriguez Sánchez";
+				TargetAttributes = {
+					8FE5E4D81F279B33005765C9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					8FE5E4EC1F279B34005765C9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8FE5E4D81F279B33005765C9;
+					};
+					8FE5E4F71F279B34005765C9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8FE5E4D81F279B33005765C9;
+					};
+				};
+			};
+			buildConfigurationList = 8FE5E4D41F279B32005765C9 /* Build configuration list for PBXProject "Instantgo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8FE5E4D01F279B32005765C9;
+			productRefGroup = 8FE5E4DA1F279B34005765C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FE5E4D81F279B33005765C9 /* Instantgo */,
+				8FE5E4EC1F279B34005765C9 /* InstantgoTests */,
+				8FE5E4F71F279B34005765C9 /* InstantgoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8FE5E4D71F279B33005765C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FE5E4E71F279B34005765C9 /* LaunchScreen.storyboard in Resources */,
+				8FE5E50B1F279B76005765C9 /* GoogleService-Info.plist in Resources */,
+				8FE5E4E41F279B34005765C9 /* Assets.xcassets in Resources */,
+				8FE5E4E21F279B34005765C9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FE5E4EB1F279B34005765C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FE5E4F61F279B34005765C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A9A7837B8386B2773263AC7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Instantgo/Pods-Instantgo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E7E9D669BE6FFBA2C77D6EB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Instantgo/Pods-Instantgo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D49D482EFA4BA2B4D6533E76 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8FE5E4D51F279B33005765C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FB79AF01F2908060022AB5C /* UpdateEventViewController.swift in Sources */,
+				8FE5E5121F27AE29005765C9 /* CalendarViewController.swift in Sources */,
+				8FE5E4DF1F279B34005765C9 /* ViewController.swift in Sources */,
+				8FB79AED1F28FD380022AB5C /* PostEventViewController.swift in Sources */,
+				8FE5E4DD1F279B34005765C9 /* AppDelegate.swift in Sources */,
+				8FB79AF21F2A13430022AB5C /* Event.swift in Sources */,
+				8FE5E5101F27A77C005765C9 /* SignUpViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FE5E4E91F279B34005765C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FE5E4F21F279B34005765C9 /* InstantgoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FE5E4F41F279B34005765C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FE5E4FD1F279B34005765C9 /* InstantgoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8FE5E4EF1F279B34005765C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FE5E4D81F279B33005765C9 /* Instantgo */;
+			targetProxy = 8FE5E4EE1F279B34005765C9 /* PBXContainerItemProxy */;
+		};
+		8FE5E4FA1F279B34005765C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FE5E4D81F279B33005765C9 /* Instantgo */;
+			targetProxy = 8FE5E4F91F279B34005765C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8FE5E4E01F279B34005765C9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FE5E4E11F279B34005765C9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8FE5E4E51F279B34005765C9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FE5E4E61F279B34005765C9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8FE5E4FF1F279B34005765C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8FE5E5001F279B34005765C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8FE5E5021F279B34005765C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E308A5CE91D3CC43EB49ECB9 /* Pods-Instantgo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Instantgo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BRS.Instantgo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8FE5E5031F279B34005765C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6EB63A929BA9AE1797DA658 /* Pods-Instantgo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Instantgo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BRS.Instantgo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		8FE5E5051F279B34005765C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = InstantgoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BRS.InstantgoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Instantgo.app/Instantgo";
+			};
+			name = Debug;
+		};
+		8FE5E5061F279B34005765C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = InstantgoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BRS.InstantgoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Instantgo.app/Instantgo";
+			};
+			name = Release;
+		};
+		8FE5E5081F279B34005765C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = InstantgoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BRS.InstantgoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Instantgo;
+			};
+			name = Debug;
+		};
+		8FE5E5091F279B34005765C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = InstantgoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BRS.InstantgoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Instantgo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8FE5E4D41F279B32005765C9 /* Build configuration list for PBXProject "Instantgo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FE5E4FF1F279B34005765C9 /* Debug */,
+				8FE5E5001F279B34005765C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FE5E5011F279B34005765C9 /* Build configuration list for PBXNativeTarget "Instantgo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FE5E5021F279B34005765C9 /* Debug */,
+				8FE5E5031F279B34005765C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FE5E5041F279B34005765C9 /* Build configuration list for PBXNativeTarget "InstantgoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FE5E5051F279B34005765C9 /* Debug */,
+				8FE5E5061F279B34005765C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FE5E5071F279B34005765C9 /* Build configuration list for PBXNativeTarget "InstantgoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FE5E5081F279B34005765C9 /* Debug */,
+				8FE5E5091F279B34005765C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8FE5E4D11F279B32005765C9 /* Project object */;
+}
